@@ -77,10 +77,12 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C#,javascript,html,sql,css" />
+  <meta name="keywords" content="2017-7,C#小程序," />
 
 
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="XnU132的博客" type="application/atom+xml" />
@@ -95,16 +97,21 @@
 
 
 
-<meta name="description" content="大三狗一枚，即将步入大四">
-<meta name="keywords" content="C#,javascript,html,sql,css">
-<meta property="og:type" content="website">
-<meta property="og:title" content="XnU132的博客">
-<meta property="og:url" content="//xnu132.top/index.html">
+<meta name="description" content="简 介C#小程序第二波 - - “云中转聊天” “云中转聊天”基本功能完成于本渣前段时间自学完传智播客.NET系列基础课程以及数据库内容之后">
+<meta name="keywords" content="2017-7,C#小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C#小程序 - - 云中转聊天">
+<meta property="og:url" content="//xnu132.top/2017/07/13/diary-170713-1/index.html">
 <meta property="og:site_name" content="XnU132的博客">
-<meta property="og:description" content="大三狗一枚，即将步入大四">
+<meta property="og:description" content="简 介C#小程序第二波 - - “云中转聊天” “云中转聊天”基本功能完成于本渣前段时间自学完传智播客.NET系列基础课程以及数据库内容之后">
+<meta property="og:image" content="//xnu132.top/assets/blogImg/DP-170713-0.jpg">
+<meta property="og:image" content="//xnu132.top/assets/blogImg/DP-170713-1.jpg">
+<meta property="og:image" content="//xnu132.top/assets/blogImg/DP-170713-2.jpg">
+<meta property="og:updated_time" content="2017-07-16T14:06:09.365Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="XnU132的博客">
-<meta name="twitter:description" content="大三狗一枚，即将步入大四">
+<meta name="twitter:title" content="C#小程序 - - 云中转聊天">
+<meta name="twitter:description" content="简 介C#小程序第二波 - - “云中转聊天” “云中转聊天”基本功能完成于本渣前段时间自学完传智播客.NET系列基础课程以及数据库内容之后">
+<meta name="twitter:image" content="//xnu132.top/assets/blogImg/DP-170713-0.jpg">
 
 
 
@@ -132,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="//xnu132.top/"/>
+  <link rel="canonical" href="//xnu132.top/2017/07/13/diary-170713-1/"/>
 
 
 
 
 
-  <title>XnU132的博客</title>
+  <title>C#小程序 - - 云中转聊天 | XnU132的博客</title>
   
 
 
@@ -163,9 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,9 +253,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -276,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/13/diary-170713-1/" itemprop="url">C#小程序 - - 云中转聊天</a></h1>
+          <h1 class="post-title" itemprop="name headline">C#小程序 - - 云中转聊天</h1>
         
 
         <div class="post-meta">
@@ -336,565 +339,96 @@
       
 
       
-        
-          <p><br></p>
+        <p><br></p>
 <h5 id="简-介"><a href="#简-介" class="headerlink" title="简 介"></a>简 介</h5><p>C#小程序第二波 - - “云中转聊天”</p>
 <p>“云中转聊天”基本功能完成于本渣前段时间自学完传智播客.NET系列基础课程以及数据库内容之后</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/13/diary-170713-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+<a id="more"></a>
+<h5 id="细-究"><a href="#细-究" class="headerlink" title="细 究"></a>细 究</h5><p>为什么弄这么个东东？ -&gt; 处于内网中的服务器无法实现内外网之间的通信</p>
+<p>为了解决这个问题，本渣的思路是这样的 -&gt;</p>
+<p>首先，要想利用Socket实现用户之间的通信，你得有一个所有连接到互联网上的用户都能访问得到的（包括不同内网用户）、挂到外网上的服务器进行消息中转。可是本渣并没有那样的挂到外网上的服务器，虽然很想将自己的 渣本 作为服务器来实现这么个功能，苦于本渣这个校园网用户深处学校的内网中。并且本渣纯粹是以学习为目的and考虑到本渣目前的经济状况，本渣不想and不可能将自己的生活费砸到云主机上。。</p>
+<p>基于以上的前提，本渣想了很多种方法。比如到网上找免费的云主机试用，花了很长时间和精力，最终只是得出一个结论 - - 免费的午餐很难吃···</p>
+<p>后来，本渣到阿里云上逛了逛，也不知道是在哪个版块看到了一个超廉价的共享虚拟主机普惠版，貌似是本渣申请.win域名送了一年的免费试用期限。其中包含200M的网页空间和20M的数据库空间，拿来学习和测试足以。</p>
+<p>有了云虚拟主机的本渣并没有立即将其用于云中转聊天上，原因 - - 拖延症 =_=</p>
+<p>云虚拟主机被本渣搁置了一段时间之后，终于在一个闲得无聊的下午被某渣用来开始自己的计划。</p>
+<p>本渣的计划并不是使用Socket来完成这个任务，而是使用了最近才刚学完的数据库。</p>
+<p>“云中转聊天”原本叫“云数据库中转聊天”，因为其原理就是利用云数据库的增删查改来实现消息的发送和读取功能。</p>
+<p>该程序的窗体主要分为三个：<br>1、登录界面<br>2、好友列表<br>3、聊天窗口</p>
+<p>外观上较为简陋，只为实现基本的功能，并且安全性较低，只做学习和测试使用。</p>
+<p>相关截图放上：</p>
+<p><img src="/assets/blogImg/DP-170713-0.jpg" alt=""></p>
+<p><img src="/assets/blogImg/DP-170713-1.jpg" alt=""></p>
+<p><img src="/assets/blogImg/DP-170713-2.jpg" alt=""></p>
+<p><a href="http://software.xnu132.win/云中转聊天程序/云中转聊天程序1.0.1.9.rar" target="_blank" rel="external"><font style="color:green;">点击此处下载程序</font></a></p>
+<p><em>end</em></p>
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="//xnu132.top/2017/07/12/diary-170712-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xn.U">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="XnU132的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/12/diary-170712-1/" itemprop="url">C#小程序 - - ColorCreator</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-12T18:23:00+08:00">
-                2017-07-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/2017-7/" rel="tag"># 2017-7</a>
           
-            
+            <a href="/tags/C-小程序/" rel="tag"># C#小程序</a>
           
-
-          
-          
-             <span id="/2017/07/12/diary-170712-1/" class="leancloud_visitors" data-flag-title="C#小程序 - - ColorCreator">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p><br></p>
-<h5 id="简-介"><a href="#简-介" class="headerlink" title="简 介"></a>简 介</h5><p>ColorCreator是本渣于前段时间自学HTML和CSS时依照自己的需求用C#编写的</p>
-<p>小小程序，并无太多的功能，简而言之就是 - - 展示十六进制颜色代码所对应的颜色</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/12/diary-170712-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/12/diary-170712-1/" rel="next" title="C#小程序 - - ColorCreator">
+                <i class="fa fa-chevron-left"></i> C#小程序 - - ColorCreator
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="//xnu132.top/2017/06/24/diary-170624-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xn.U">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="XnU132的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/24/diary-170624-1/" itemprop="url">音乐分享</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-24T12:23:00+08:00">
-                2017-06-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/06/24/diary-170624-1/" class="leancloud_visitors" data-flag-title="音乐分享">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=26447698&auto=0&height=66"></iframe>
-
-<p>人生って何なのって</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/24/diary-170624-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="//xnu132.top/2017/06/16/diary-170616-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xn.U">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="XnU132的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/16/diary-170616-1/" itemprop="url">那些年某渣脑子进过的水</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-16T17:47:00+08:00">
-                2017-06-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/06/16/diary-170616-1/" class="leancloud_visitors" data-flag-title="那些年某渣脑子进过的水">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="/assets/blogImg/DP-170616-0.jpg" alt=""></p>
-<p>每次静坐学习<br>脑海中总是会浮现出以前做过的一些蠢事<br>而一想到这些蠢事<br>某渣就忍不住要记录下来<br>虽然是些“蠢事”<br>毕竟还是自己亲身经历过的呢 ┐(´-｀)┌</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/16/diary-170616-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="//xnu132.top/2017/06/13/diary-170613-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xn.U">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="XnU132的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/13/diary-170613-1/" itemprop="url">资源路径更改测试</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-13T18:40:00+08:00">
-                2017-06-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/06/13/diary-170613-1/" class="leancloud_visitors" data-flag-title="资源路径更改测试">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="测试图片："><a href="#测试图片：" class="headerlink" title="测试图片："></a>测试图片：</h4><p><img src="/assets/blogImg/DP-170613-0.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -902,6 +436,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -922,8 +462,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -983,6 +532,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#简-介"><span class="nav-number">1.</span> <span class="nav-text">简 介</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#细-究"><span class="nav-number">2.</span> <span class="nav-text">细 究</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1096,10 +661,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -1125,6 +690,10 @@
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139194"></script>
+      <!-- UY END -->
     
   
 
